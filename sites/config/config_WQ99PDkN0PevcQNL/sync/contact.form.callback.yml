@@ -1,0 +1,32 @@
+uuid: 219a8ca9-9b1a-41f7-b4b8-617bd0efa864
+langcode: ru
+status: true
+dependencies:
+  module:
+    - contact_ajax
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
+    submit_text: Заказать
+    show_preview: false
+    disabled_form_message: ''
+    maximum_submissions_user: 0
+  contact_ajax:
+    enabled: true
+    prefix_id: ''
+    render_selector: ''
+    confirmation_type: 3
+    load_from_message:
+      value: "<p class=\"text-align-center\">Спасибо!<br />\r\nМы свяжемся с вами в ближайшее время</p>"
+      format: wysiwyg
+_core:
+  default_config_hash: cy0Gi36Z81R_JCU_zNMxSK2acohBAFjcYnOV0oMQeMk
+id: callback
+label: 'Заказать звонок'
+recipients:
+  - support@synapse-studio.ru
+reply: ''
+weight: 0
+message: 'Спасибо, мы свяжемся с вами в ближайшее время.'
+redirect: null

@@ -1,0 +1,51 @@
+uuid: 6e13b9a4-b528-46f6-ba26-60802f279808
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text.field_body
+    - field.field.paragraph.image_text.field_image
+    - field.field.paragraph.image_text.field_title
+    - image.style.max_1300x1300
+    - image.style.paragraph_gallery
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - colorbox
+    - text
+_core:
+  default_config_hash: ZkYt4MR8tOdhscvKBDGCubqW6gwq-1jpJN7eUl6zT08
+id: paragraph.image_text.default
+targetEntityType: paragraph
+bundle: image_text
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      colorbox_node_style: paragraph_gallery
+      colorbox_node_style_first: ''
+      colorbox_image_style: max_1300x1300
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: none
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    type: colorbox
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

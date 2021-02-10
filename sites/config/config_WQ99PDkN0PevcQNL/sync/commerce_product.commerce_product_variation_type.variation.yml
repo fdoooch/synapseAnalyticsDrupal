@@ -1,0 +1,12 @@
+uuid: b234bafc-965a-4d08-8932-175f29f7b840
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tp6gqA1orX9QhSKH6Ktcg-Lq_kHAUliVVFBnGBaAOLA
+id: variation
+label: 'Product Variations'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

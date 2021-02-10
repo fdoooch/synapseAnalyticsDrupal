@@ -1,0 +1,57 @@
+uuid: 8706cf16-4c73-4f96-a3ef-7fbf129ff36b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.service
+    - paragraphs.paragraphs_type.about
+    - paragraphs.paragraphs_type.body
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image_blocks
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: aiIAf72VDq3-3EUspIPh_1BRHblzaEgxQhHC1szgWFY
+id: node.service.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: service
+label: Параграф
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      body: body
+      gallery: gallery
+      image_blocks: image_blocks
+      about: about
+    target_bundles_drag_drop:
+      about:
+        enabled: true
+        weight: 8
+      about_item:
+        weight: 7
+        enabled: false
+      body:
+        enabled: true
+        weight: -9
+      gallery:
+        enabled: true
+        weight: -7
+      image_blocks:
+        enabled: true
+        weight: 8
+      image_text:
+        weight: -6
+        enabled: false
+      image_text_sort:
+        weight: -8
+        enabled: false
+field_type: entity_reference_revisions

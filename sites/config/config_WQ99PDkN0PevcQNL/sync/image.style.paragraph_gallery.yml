@@ -1,0 +1,23 @@
+uuid: 0337082a-80ac-4c2e-a44f-ee5ac3636321
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: R8DiCGHLzViu_kr7VgdpsLiJOoBBbHGjXAMh41cqJJY
+name: paragraph_gallery
+label: 'Paragraph gallery [425x215]'
+effects:
+  bc122a4b-d105-41e9-bab4-1409022a7782:
+    uuid: bc122a4b-d105-41e9-bab4-1409022a7782
+    id: image_convert
+    weight: 1
+    data:
+      extension: jpg
+  b8d18cae-8cd4-4ddc-a3b4-651a693e79c2:
+    uuid: b8d18cae-8cd4-4ddc-a3b4-651a693e79c2
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 425
+      height: 215
+      anchor: center-center

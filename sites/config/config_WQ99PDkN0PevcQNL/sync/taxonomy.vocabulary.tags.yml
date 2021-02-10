@@ -1,0 +1,10 @@
+uuid: f81d5687-393b-436b-a941-b0d6f1512ad6
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EvmxLJitO1FKldRtDFCT7d-8JJUEA7bZAOq_V2ApkBE
+name: Теги
+vid: tags
+description: null
+weight: 0

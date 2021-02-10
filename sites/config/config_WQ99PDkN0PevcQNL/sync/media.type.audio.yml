@@ -1,0 +1,16 @@
+uuid: 62bae078-d1be-4b20-a7d6-c6561cb5ff78
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eJw8n6Tk2tO3ZysuEeGR1gZa1yRffaZzR4t0Q7iNurs
+id: audio
+label: Аудио
+description: 'Локально размещаемый аудиофайл.'
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_audio_file
+field_map:
+  name: name

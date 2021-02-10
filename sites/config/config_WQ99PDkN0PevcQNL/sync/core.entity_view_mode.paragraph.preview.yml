@@ -1,0 +1,12 @@
+uuid: b9c436d4-a133-4fc1-aaae-46e287230e2f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: h3BeHVei4Lnyqbkao3YiF4KqoY-DhRvUNfEgKG8Rgjg
+id: paragraph.preview
+label: Предпросмотр
+targetEntityType: paragraph
+cache: true

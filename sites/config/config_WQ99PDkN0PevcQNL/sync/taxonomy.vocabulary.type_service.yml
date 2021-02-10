@@ -1,0 +1,10 @@
+uuid: 78f8eee6-ef15-44a5-b9d5-a274dfb4854d
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nIbpWTGEziOzzhiDzoia2JZCcW2wA5ogV83n3f9E_Gw
+name: 'Тип услуги'
+vid: type_service
+description: ''
+weight: 0

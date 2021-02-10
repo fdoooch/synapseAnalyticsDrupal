@@ -1,0 +1,42 @@
+uuid: 7264a3e1-e26b-44ea-9215-c805077b084e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gallery_image_text
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image_text
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Ro7dvrjl394lCD2Z6VCR3ERX6V2mj2wnMi01wMETmwQ
+id: paragraph.gallery.field_gallery_image_text
+field_name: field_gallery_image_text
+entity_type: paragraph
+bundle: gallery
+label: Изображение
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_text: image_text
+    target_bundles_drag_drop:
+      body:
+        weight: -7
+        enabled: false
+      gallery:
+        weight: -6
+        enabled: false
+      image_text:
+        enabled: true
+        weight: -9
+      image_text_sort:
+        weight: -8
+        enabled: false
+field_type: entity_reference_revisions

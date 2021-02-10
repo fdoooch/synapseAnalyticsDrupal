@@ -1,0 +1,12 @@
+uuid: d8841412-8f06-4c24-b73b-644ab0f40785
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xVrzlL7Up8C3PZt67iFDstvPciuWvXNkfGu-mMXuaNI
+id: store
+label: Магазин
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

@@ -1,0 +1,16 @@
+uuid: a3fd53ca-a2a0-46f4-94b3-85e96463ebba
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mYTU4VkYPw4x9tAKva_Ie-TUSWmV_-8v-wSytlMDnbA
+id: anonymous
+label: Guest
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'use text format restricted_html'
+  - 'view commerce_product'

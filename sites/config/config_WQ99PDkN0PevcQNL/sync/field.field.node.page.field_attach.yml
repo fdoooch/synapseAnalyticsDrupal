@@ -1,0 +1,29 @@
+uuid: 961f7f75-c597-4d9b-9692-60b1a4120fcd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach
+    - node.type.page
+  module:
+    - file
+_core:
+  default_config_hash: AeS-pJrGqntkKQQRgQnTKv_4K6KDwFioKXNdHdicOKk
+id: node.page.field_attach
+field_name: field_attach
+entity_type: node
+bundle: page
+label: 'Прикреплённые файлы'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'page/[date:custom:Y]'
+  file_extensions: 'txt jpg jpeg png doc docx pdf ods xlsx xls zip rar'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

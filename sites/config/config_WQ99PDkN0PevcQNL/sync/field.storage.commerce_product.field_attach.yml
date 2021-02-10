@@ -1,0 +1,25 @@
+uuid: d13d08e6-382f-4522-8306-beb28ce66089
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+_core:
+  default_config_hash: wmvjwl7JWvdJlCx9F21okwqj6W9kvrNRdADudtiEURA
+id: commerce_product.field_attach
+field_name: field_attach
+entity_type: commerce_product
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

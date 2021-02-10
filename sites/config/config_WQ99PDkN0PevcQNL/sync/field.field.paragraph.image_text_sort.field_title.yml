@@ -1,0 +1,21 @@
+uuid: 5873c63f-6ddb-4c5d-8909-d74f3c8f13c2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.image_text_sort
+_core:
+  default_config_hash: KWK8ljUAGfCqdDkf_FpMHgwDHrOzmzo4AMHpoAP0FYY
+id: paragraph.image_text_sort.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: image_text_sort
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,43 @@
+uuid: a77cd2f0-b57a-4929-82d7-da79ecf46285
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_item.field_about_icon
+    - field.field.paragraph.about_item.field_description
+    - field.field.paragraph.about_item.field_title
+    - paragraphs.paragraphs_type.about_item
+_core:
+  default_config_hash: 0Ip9qxJj0SYSP9a635yMc0OfL2-4IXK8o8fhcCtiB1w
+id: paragraph.about_item.default
+targetEntityType: paragraph
+bundle: about_item
+mode: default
+content:
+  field_about_icon:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

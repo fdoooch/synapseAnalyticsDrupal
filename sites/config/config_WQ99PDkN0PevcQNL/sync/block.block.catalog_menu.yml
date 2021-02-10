@@ -1,0 +1,28 @@
+uuid: a214da3e-9424-427d-be9a-9be4e6e87644
+langcode: ru
+status: true
+dependencies:
+  module:
+    - catalog
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: Wx5n9zsr27a0ZZ2ufILOaHPrAUCnioKONesAPq3qmro
+id: catalog_menu
+theme: adaptive
+region: sidebar
+weight: 0
+provider: null
+plugin: catalog_menu
+settings:
+  id: catalog_menu
+  label: 'Меню каталога'
+  provider: catalog
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/catalog*\r\n/products"
+    negate: false
+    context_mapping: {  }

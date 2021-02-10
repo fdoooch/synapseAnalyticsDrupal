@@ -1,0 +1,33 @@
+uuid: 88c37bcf-64fb-4847-b44b-eb3e16e76d7d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.callback
+    - field.field.contact_message.callback.field_name
+    - field.field.contact_message.callback.field_phone
+_core:
+  default_config_hash: 6GUxxkQgClmHXfnwMANKjxHtvTt9eSXUJke9eBbOPy4
+id: contact_message.callback.default
+targetEntityType: contact_message
+bundle: callback
+mode: default
+content:
+  field_phone:
+    label: hidden
+    weight: 0
+    settings:
+      size: 40
+      placeholder: 'Номер телефона'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  copy: true
+  field_name: true
+  langcode: true
+  mail: true
+  message: true
+  name: true
+  preview: true
+  subject: true

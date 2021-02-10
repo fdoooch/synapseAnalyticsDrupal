@@ -1,0 +1,18 @@
+langcode: ru
+status: true
+dependencies:
+  module:
+    - synpay
+id: synpay
+label: synpay
+weight: 10
+plugin: synpay
+configuration:
+  display_label: 'Оплатить онлайн'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  gateway: sberbank
+conditions: {  }
+conditionOperator: AND

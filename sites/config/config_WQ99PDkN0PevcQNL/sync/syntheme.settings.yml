@@ -1,0 +1,29 @@
+theme: default
+main: '#FFFFFF'
+bg-footer: '#FFFFFF'
+text-footer: '#131313'
+text-header: '#4F4F4F'
+link-header: '#4F4F4F'
+link-menu: '#4F4F4F'
+link-menu-hover: '#4577D4'
+form-hover: '#4577D4'
+text-main: '#131313'
+text-second: '#131313'
+link: '#4577D4'
+link-hover: '#3763B6'
+button1: '#4577D5'
+button2: '#4982ED'
+bg-header: '#F5F5F5'
+body-title-colored: '#4577D4'
+small-items: '#4577D4'
+bg: '#FFFFFF'
+form: '#FFFFFF'
+promo: '#FFFFFF'
+border: '#E4E4E4'
+light: '#F5F5F5'
+text-inverse: '#FFFFFF'
+header-inverse: false
+footer-inverse: false
+_core:
+  default_config_hash: gX3MiZyc5wYMxZezA8ehWa-XdiKkBGmpRlmVSzFjAQM
+langcode: ru

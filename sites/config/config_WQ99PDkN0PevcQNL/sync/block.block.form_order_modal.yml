@@ -1,0 +1,25 @@
+uuid: 541daeba-986e-4ea7-8c06-6e21d0729815
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+  module:
+    - contact_block
+  theme:
+    - adaptive
+_core:
+  default_config_hash: piKsDeEFU6x3t6lMM95yzuwCPxknzfA_Zse3HQPozxM
+id: form_order_modal
+theme: adaptive
+region: bottom
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Заказать товар'
+  provider: contact_block
+  label_display: visible
+  contact_form: order
+visibility: {  }

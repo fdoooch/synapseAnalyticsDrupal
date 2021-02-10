@@ -1,0 +1,16 @@
+uuid: 513edde5-b63f-4d1e-8920-5a40167e6a26
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.product_options
+_core:
+  default_config_hash: JALnImGq_Gxxmocr6Swr_V0Jo7mQjOGdaaJeT_1wv9s
+id: taxonomy_term.product_options.default
+targetEntityType: taxonomy_term
+bundle: product_options
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

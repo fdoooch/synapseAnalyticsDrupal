@@ -1,0 +1,57 @@
+uuid: 37e4e2f8-e5f0-4004-be95-458663040375
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.callback
+    - field.field.contact_message.callback.field_name
+    - field.field.contact_message.callback.field_phone
+_core:
+  default_config_hash: JWd_20q2Lez_uCckJIYCkHVH6IpdNyB8kvLecoxkOgk
+id: contact_message.callback.default
+targetEntityType: contact_message
+bundle: callback
+mode: default
+content:
+  field_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  mail:
+    weight: -2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  name:
+    weight: -3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  subject:
+    weight: -1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  message: true

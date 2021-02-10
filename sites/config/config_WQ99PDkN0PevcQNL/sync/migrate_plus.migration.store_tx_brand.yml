@@ -1,0 +1,38 @@
+uuid: db000ca3-d7ba-43b5-894e-51877b4934f6
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlstarter_demo
+_core:
+  default_config_hash: 2f7XT_hhuVQQzaYkRm8ipDUId8lj2rfT9gTTLOlVldE
+id: store_tx_brand
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: store
+label: 'Tx Brand'
+source:
+  plugin: s_tx_brand
+process:
+  vid: vid
+  name: name
+  status: status
+  parent:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: store_tx_brand
+      source: parent
+  weight: weight
+  field_brand_link: link
+  field_brand_short: short
+  field_brand_image: image
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null

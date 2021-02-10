@@ -1,0 +1,10 @@
+uuid: 11d5c0cb-d193-4cb5-817c-fe65cb4237bb
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JUo4ElaYEqurpADMFiT4O6o3Jhwkch7f2tsaSLS_ZnE
+id: editor
+label: 'Editor menu'
+description: null
+locked: false

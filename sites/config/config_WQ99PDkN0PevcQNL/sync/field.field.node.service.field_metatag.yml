@@ -1,0 +1,23 @@
+uuid: 9467a00f-8c32-4c1a-a0cf-18ce6df62d46
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag
+    - node.type.service
+  module:
+    - metatag
+_core:
+  default_config_hash: MziuAEnCS0Ojm_Q2SMjaXxpCSqyGlmaNAqiTh6p0Sdg
+id: node.service.field_metatag
+field_name: field_metatag
+entity_type: node
+bundle: service
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

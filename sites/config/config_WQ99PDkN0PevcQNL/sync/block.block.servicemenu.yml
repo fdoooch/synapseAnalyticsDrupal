@@ -1,0 +1,28 @@
+uuid: 8589319e-c904-4e22-b91d-3363b0c8dcb3
+langcode: ru
+status: true
+dependencies:
+  module:
+    - service
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: B53BMbvYwzc67T-6tv94QgjIzeBXv4Mqhfes-ZV9_D0
+id: servicemenu
+theme: adaptive
+region: sidebar
+weight: 0
+provider: null
+plugin: service_menu
+settings:
+  id: service_menu
+  label: 'Service menu'
+  provider: service
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/services*'
+    negate: false
+    context_mapping: {  }

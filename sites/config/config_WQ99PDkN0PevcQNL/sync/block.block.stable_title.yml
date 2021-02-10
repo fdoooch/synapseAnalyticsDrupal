@@ -1,0 +1,20 @@
+uuid: fb3dadd6-3b10-4dfc-ba35-3461ec0599ae
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stable
+_core:
+  default_config_hash: sHhyLkp-bOPXx7X9TBHAlGQMslZQQZX3l78mMjuWMuw
+id: stable_title
+theme: stable
+region: sidebar_first
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

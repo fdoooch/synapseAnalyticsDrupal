@@ -1,0 +1,28 @@
+uuid: 8c23f500-d6d9-44c4-b170-c953cdf54dd2
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlstarter_demo
+_core:
+  default_config_hash: iQM-Iii6CZ1VQtx4F0F3rMxrDFRZIHVH9auVq41OoM0
+id: store_product_variation
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: store
+label: 'Вариация товара'
+source:
+  plugin: s_product_variation
+process:
+  type: type
+  title: title
+  sku: sku
+  product_uuid: product_uuid
+  price: price
+  field_oldprice: field_oldprice
+destination:
+  plugin: 'entity:commerce_product_variation'
+migration_dependencies: null

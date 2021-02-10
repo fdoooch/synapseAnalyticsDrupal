@@ -1,0 +1,139 @@
+uuid: 6195fb1d-2182-43e8-87d4-1db77ad5e688
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_attach
+    - field.field.node.service.field_gallery
+    - field.field.node.service.field_image
+    - field.field.node.service.field_image_big
+    - field.field.node.service.field_metatag
+    - field.field.node.service.field_paragraph
+    - field.field.node.service.field_service_info
+    - field.field.node.service.field_short
+    - field.field.node.service.field_type_service
+    - image.style.thumbnail
+    - node.type.service
+  module:
+    - file
+    - image
+    - media_library
+    - metatag
+    - paragraphs
+    - path
+_core:
+  default_config_hash: JnJ11iePVpIjLBY2_XHNBcYCODBE8EkjFkdD-NCr-V4
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attach:
+    type: file_generic
+    weight: 9
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_gallery:
+    type: image_image
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_image_big:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_metatag:
+    weight: 26
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_paragraph:
+    type: paragraphs
+    weight: 8
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_service_info:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_short:
+    type: string_textarea
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_type_service:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  langcode: true
+  sticky: true
+  uid: true

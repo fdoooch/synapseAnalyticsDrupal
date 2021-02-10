@@ -1,0 +1,32 @@
+uuid: 5a62b579-0ff0-492b-9cc4-e65f85621c2d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - taxonomy
+_core:
+  default_config_hash: EJhcW_0tshzRy1zVn8w-8C3hApeXOIVqwgmt5h3M6u4
+id: taxonomy_term.field_catalog_image
+field_name: field_catalog_image
+entity_type: taxonomy_term
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

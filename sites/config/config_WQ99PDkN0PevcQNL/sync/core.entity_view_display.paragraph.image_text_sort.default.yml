@@ -1,0 +1,54 @@
+uuid: cde6ef75-0eff-4223-89f2-97a5c4d08d0f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text_sort.field_body
+    - field.field.paragraph.image_text_sort.field_image
+    - field.field.paragraph.image_text_sort.field_image_text_sort
+    - field.field.paragraph.image_text_sort.field_title
+    - image.style.paragraph_gallery
+    - paragraphs.paragraphs_type.image_text_sort
+  module:
+    - image
+    - options
+    - text
+_core:
+  default_config_hash: XWF8JTmWlIOH5aPG16rbIN-2UGG_NkkdCD9twBGPrwY
+id: paragraph.image_text_sort.default
+targetEntityType: paragraph
+bundle: image_text_sort
+mode: default
+content:
+  field_body:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: paragraph_gallery
+      image_link: ''
+    third_party_settings: {  }
+  field_image_text_sort:
+    type: list_key
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

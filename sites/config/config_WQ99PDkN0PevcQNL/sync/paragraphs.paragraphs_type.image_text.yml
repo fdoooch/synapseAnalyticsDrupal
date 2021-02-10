@@ -1,0 +1,12 @@
+uuid: 86cc68dd-fc9c-4478-a2fe-7636aa2039a8
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gOJ7qJ9Jela1PP4xerxQxmMD_n2ltTP1-spDMZNNyEo
+id: image_text
+label: Изображение
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

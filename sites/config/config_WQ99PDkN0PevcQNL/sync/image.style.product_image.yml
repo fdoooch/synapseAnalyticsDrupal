@@ -1,0 +1,17 @@
+uuid: 554b6953-5b6a-4b55-ae36-4b8efe1c2326
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cW26qi078TOEm0H3GtUfenICSIh90H4tYm-ESbvwqMg
+name: product_image
+label: 'Product Image (570×570)'
+effects:
+  60a2b8b5-df92-47a0-80c1-ce0d69c7cf4c:
+    uuid: 60a2b8b5-df92-47a0-80c1-ce0d69c7cf4c
+    id: image_scale
+    weight: 1
+    data:
+      width: 570
+      height: 570
+      upscale: false

@@ -1,0 +1,56 @@
+uuid: a7e0c2e4-8e15-42d9-84cf-4676f5be107a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.blog.body
+    - field.field.node.blog.field_attach
+    - field.field.node.blog.field_gallery
+    - field.field.node.blog.field_image
+    - field.field.node.blog.field_metatag
+    - field.field.node.blog.field_tags
+    - image.style.blog
+    - node.type.blog
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: cP7brxgbzzZZzY9nth8IvMIyWLhLx3K8OCKcILNkbqk
+id: node.blog.teaser
+targetEntityType: node
+bundle: blog
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    label: hidden
+    region: content
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: blog
+      image_link: content
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_attach: true
+  field_gallery: true
+  field_metatag: true
+  langcode: true
+  links: true

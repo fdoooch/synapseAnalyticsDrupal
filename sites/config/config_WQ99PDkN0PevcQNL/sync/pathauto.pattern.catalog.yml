@@ -1,0 +1,25 @@
+uuid: d8f4e7bd-00c8-4a8d-8a54-5a8bcd39f582
+langcode: ru
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+_core:
+  default_config_hash: WFTe_cBq3-E43_TqohqcCP8aNXiuNUkgyFmLoHr5XdI
+id: catalog
+label: каталог
+type: 'canonical_entities:taxonomy_term'
+pattern: 'catalog/[term:name]'
+selection_criteria:
+  72da1133-c096-4fed-adfd-367fee9d16bc:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      catalog: catalog
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 72da1133-c096-4fed-adfd-367fee9d16bc
+selection_logic: and
+weight: -5
+relationships: {  }

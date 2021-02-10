@@ -1,0 +1,27 @@
+uuid: 40050543-cff9-40b1-bc90-a1e6ed0d78cf
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.callback
+  module:
+    - contact_block
+  theme:
+    - adaptive
+_core:
+  default_config_hash: xTGaHscpt9Eozir2yh_RY5xXsGik0a7wghVmpxMxGRk
+id: adaptive_form_callme
+theme: adaptive
+region: bottom
+weight: -8
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Заказать звонок'
+  provider: contact_block
+  label_display: visible
+  contact_form: callback
+  contact_form_button_text: Callback
+  remove_preview_button: 1
+visibility: {  }

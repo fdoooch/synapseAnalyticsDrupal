@@ -1,0 +1,22 @@
+uuid: f3a4517a-9b75-4af1-8c59-d57bac71c706
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - classy
+_core:
+  default_config_hash: YdAmeqQLLaLJP39pfj8uxCJii_Q1d2tg1AXpVYkiUNE
+id: classy_content
+theme: classy
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

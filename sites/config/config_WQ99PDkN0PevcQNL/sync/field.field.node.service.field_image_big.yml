@@ -1,0 +1,30 @@
+uuid: 8e538502-3b0d-436d-a79d-0d9414d20e25
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_big
+    - media.type.image
+    - node.type.service
+_core:
+  default_config_hash: P2xYVE9EbtKFllvA7Z7eLmdZOXFhNxOzGXDb-vZN5ak
+id: node.service.field_image_big
+field_name: field_image_big
+entity_type: node
+bundle: service
+label: 'Большое изображение'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

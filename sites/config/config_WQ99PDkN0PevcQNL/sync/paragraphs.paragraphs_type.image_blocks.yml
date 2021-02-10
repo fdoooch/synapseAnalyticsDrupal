@@ -1,0 +1,12 @@
+uuid: d57b9c5c-59dc-455d-b701-7292166e1831
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uzL5Y92ihEinfvI3Y5r0_N_rwQBKUDp3AVH5lmLF29Y
+id: image_blocks
+label: 'Image Blocks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

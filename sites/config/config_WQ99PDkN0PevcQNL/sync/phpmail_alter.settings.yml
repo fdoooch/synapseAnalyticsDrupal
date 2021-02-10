@@ -1,0 +1,6 @@
+phpmail: 1
+from: ''
+debug: 0
+_core:
+  default_config_hash: UZ3SwuApyErnII8qzAi0jDxLg-6jkT7CY0Z-FtfnpzM
+langcode: ru

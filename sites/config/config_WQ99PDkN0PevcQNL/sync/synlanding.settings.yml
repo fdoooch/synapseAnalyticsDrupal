@@ -1,0 +1,15 @@
+phone: '+7 (ХХХ) XXX XX-XX'
+mail: synapse-studio@example.com
+contact: "\n          <b>Телефон:</b> +7 (ХХХ) XXX XX-XX\n          <b>Адрес:</b> г. Волода\n          <b>E-mail:</b> synapse-studio@example.com\n        \n"
+logo-text: '1'
+theme: default
+lp2: '0'
+design: store
+menu: "О нас|#about\nУслуги|#service\nГалерея|#gallery\nКонтакты|#contacts\nЗаказать|#order\n"
+map-show: true
+line_text: 'Получите бесплатную консультацию у наших менеджеров'
+address: 'г. Волода'
+_core:
+  default_config_hash: 55G5eP_Dk7fG8p6THm4Zdm7CgAhhlmQMBDbKezJL1VY
+langcode: ru
+lp_menu: '0'

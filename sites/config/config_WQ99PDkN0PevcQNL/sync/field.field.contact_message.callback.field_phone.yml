@@ -1,0 +1,21 @@
+uuid: 3a1a7453-fc3c-4519-b854-d609a3788920
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.callback
+    - field.storage.contact_message.field_phone
+_core:
+  default_config_hash: dpSgvfQiLHVqqSP2PMpFhc3Slj15M75VT8hH6FcGD2M
+id: contact_message.callback.field_phone
+field_name: field_phone
+entity_type: contact_message
+bundle: callback
+label: 'Номер телефона'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,16 @@
+uuid: 76f40501-5041-44f0-9fab-674c578e4077
+langcode: ru
+status: true
+dependencies:
+  module:
+    - commerce_product
+_core:
+  default_config_hash: fHIgcbjtMfNHiwKWxaW3Q_nOVKcHchHO4mt7oiNXceo
+id: product
+label: Товар
+type: 'canonical_entities:commerce_product'
+pattern: 'product/[commerce_product:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

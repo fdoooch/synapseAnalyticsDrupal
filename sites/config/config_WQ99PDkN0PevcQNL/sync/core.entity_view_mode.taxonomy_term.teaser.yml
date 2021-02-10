@@ -1,0 +1,12 @@
+uuid: 0e36c959-c82a-4868-beef-ab2d1f4f0b70
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: WodctWuHt8DpC8UvdrKssHggX9oEDnH6Nsj0KiPYDzg
+id: taxonomy_term.teaser
+label: Teaser
+targetEntityType: taxonomy_term
+cache: true

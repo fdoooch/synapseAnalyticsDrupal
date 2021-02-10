@@ -1,0 +1,41 @@
+uuid: 9b2dadf8-e6d3-4336-bbc6-9ef747cba91e
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q7j_JKCe4Si4J0llzc_PndRmV3PHiutDBJ7arw4Jb1c
+id: editor
+label: Редактор
+weight: 3
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'administer menu'
+  - 'administer orders'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'create article content'
+  - 'create image content'
+  - 'create page content'
+  - 'create product commerce_product'
+  - 'create service content'
+  - 'create slide content'
+  - 'create usluga content'
+  - 'delete any article content'
+  - 'delete any image content'
+  - 'delete any page content'
+  - 'delete any service content'
+  - 'delete any slide content'
+  - 'delete any usluga content'
+  - 'edit any article content'
+  - 'edit any image content'
+  - 'edit any page content'
+  - 'edit any service content'
+  - 'edit any slide content'
+  - 'edit any usluga content'
+  - 'revert all revisions'
+  - 'use text format wysiwyg'
+  - 'view all revisions'
+  - 'view commerce_store'
+  - 'view own unpublished content'
+  - 'view the administration theme'

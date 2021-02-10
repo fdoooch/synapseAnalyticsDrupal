@@ -1,0 +1,17 @@
+uuid: 4fbf2be1-f8a5-4904-a964-3ebbcd00c3ce
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bffMCBhnx1Yri-Ws54NgPu0qNnbvKqQtuvDexlteykY
+name: lp
+label: 'lp 200x150'
+effects:
+  18a4f11c-34f8-41f4-8d28-416e1a09a597:
+    uuid: 18a4f11c-34f8-41f4-8d28-416e1a09a597
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 150
+      anchor: center-center

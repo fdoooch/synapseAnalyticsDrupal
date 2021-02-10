@@ -1,0 +1,25 @@
+uuid: 5697331e-478c-44cb-a034-ff4912308cfc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blog
+  module:
+    - text
+_core:
+  default_config_hash: juNI30ZYBSAx5siRBSPb6QIAeXpWiB2Br_wAYdeJIyM
+id: node.blog.body
+field_name: body
+entity_type: node
+bundle: blog
+label: Текст
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

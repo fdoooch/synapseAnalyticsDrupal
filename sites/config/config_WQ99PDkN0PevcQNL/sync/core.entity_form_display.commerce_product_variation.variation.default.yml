@@ -1,0 +1,38 @@
+uuid: ee1e1695-ef58-447f-a77b-1405f4e9f18a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.variation
+    - field.field.commerce_product_variation.variation.field_oldprice
+    - field.field.commerce_product_variation.variation.field_stock
+  module:
+    - commerce_price
+_core:
+  default_config_hash: jElruT0PXDoGo6TSIfAeOXBi2cwBkBRN7lvfGLKenRs
+id: commerce_product_variation.variation.default
+targetEntityType: commerce_product_variation
+bundle: variation
+mode: default
+content:
+  field_oldprice:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_stock: true
+  langcode: true
+  list_price: true
+  sku: true
+  status: true
+  uid: true

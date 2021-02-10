@@ -1,0 +1,23 @@
+uuid: e0f469f4-0ed3-4b68-acae-842e4e6d67c9
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M8HcryJPCuGxGd5SWoYk_VQuaqQG9376BFEKS_4k0dA
+name: product_gallery_thumb_2x
+label: 'Product gallery thumb 2x'
+effects:
+  a9c29bcb-bdaa-4245-bf51-b581ed9fddef:
+    uuid: a9c29bcb-bdaa-4245-bf51-b581ed9fddef
+    id: image_convert
+    weight: 1
+    data:
+      extension: jpg
+  3efaedbe-4c67-4187-8aac-a40ee5517606:
+    uuid: 3efaedbe-4c67-4187-8aac-a40ee5517606
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 156
+      height: 120
+      anchor: center-center

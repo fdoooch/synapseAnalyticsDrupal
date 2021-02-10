@@ -1,0 +1,21 @@
+uuid: 38cc363b-5f07-4d8c-84ad-3afbb3fe028c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short
+    - node.type.syspage
+_core:
+  default_config_hash: Ejv_ELAmnEV-sFihfh4502KvWQ32CjmnzKzstSTRYzw
+id: node.syspage.field_short
+field_name: field_short
+entity_type: node
+bundle: syspage
+label: 'Короткое описание'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

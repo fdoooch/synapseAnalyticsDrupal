@@ -1,0 +1,10 @@
+uuid: 86b13f44-c453-4d0d-9107-3a433345ad3f
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: grz55KQ4ZI1kpN-K0OuQTnbST33HMi-g28VoW3H_6FU
+name: Каталог
+vid: catalog
+description: ''
+weight: 0

@@ -1,0 +1,23 @@
+uuid: 15cf5181-ed9c-47b7-82dc-ec805c8c42da
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0kgmVFRwRDr2pxXQ9OdfQvU6jpt1UWib40SCwNR5tqs
+name: product_teaser
+label: 'Product Teaser [286x280]'
+effects:
+  ea98e7f6-e16f-40c1-9c18-caaf1c2f82f2:
+    uuid: ea98e7f6-e16f-40c1-9c18-caaf1c2f82f2
+    id: image_convert
+    weight: 1
+    data:
+      extension: jpg
+  7f937274-39f7-4bd3-8252-075888bde167:
+    uuid: 7f937274-39f7-4bd3-8252-075888bde167
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 286
+      height: 280
+      anchor: center-top

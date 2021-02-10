@@ -49,7 +49,10 @@
         "drupal/syncabinet": "^1.0",
         "drupal/cmlmerchant": "^1.1",
         "drupal/cmlstarter_demo": "^1.0@beta",
-        "drupal/youtube": "^1.2"
+        "drupal/youtube": "^1.2",
+        "yoomoney/yookassa-sdk-php": "^2.0",
+        "voronkovich/sberbank-acquiring-client": "^2.5",
+        "drupal/commerce_shipping": "^2.0@RC"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -67,6 +70,12 @@
                 "[web-root]/robots.txt": false,
                 "[web-root]/web.config": false
             }      
+        },
+        "patches": {
+          "drupal/commerce": {
+            "Condition based on order subtotal — Issue #2938729": "https://www.drupal.org/files/issues/2020-06-05/2938729.patch",
+            "Promotion condition for order total — Issue #2993928": "https://www.drupal.org/files/issues/2019-02-11/shipping_calculated_on_subtotal-2993928-3.patch"
+          }
         },
         "_readme": [
             "By default Drupal loads the autoloader from ./vendor/autoload.php."

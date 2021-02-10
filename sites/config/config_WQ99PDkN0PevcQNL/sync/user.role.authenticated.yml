@@ -1,0 +1,18 @@
+uuid: 8d24e44a-e7c1-442f-bae1-d8fa0ede0064
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j0Z0A4_0PFR3fIdLT4NgRD79gN9XtFddaa84uS-P4rI
+id: authenticated
+label: User
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view own commerce_order'

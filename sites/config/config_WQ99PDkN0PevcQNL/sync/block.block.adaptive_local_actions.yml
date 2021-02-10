@@ -1,0 +1,20 @@
+uuid: 80fb7f54-8d21-4151-8bf9-c6f83abbf498
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - adaptive
+_core:
+  default_config_hash: OGCXKUqfpK7HBBcO_bqczbiYTciwjHCZqkPLpsh_4b0
+id: adaptive_local_actions
+theme: adaptive
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

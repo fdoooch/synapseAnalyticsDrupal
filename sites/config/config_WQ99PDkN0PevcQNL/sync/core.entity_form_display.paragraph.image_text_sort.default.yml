@@ -1,0 +1,54 @@
+uuid: abff9ecc-c657-4373-91cf-22c24250625a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_text_sort.field_body
+    - field.field.paragraph.image_text_sort.field_image
+    - field.field.paragraph.image_text_sort.field_image_text_sort
+    - field.field.paragraph.image_text_sort.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.image_text_sort
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: 8E5jA_OoqI5RXgBvF7s-yJyqNIsNOmcvkuBaPHplc90
+id: paragraph.image_text_sort.default
+targetEntityType: paragraph
+bundle: image_text_sort
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image_text_sort:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

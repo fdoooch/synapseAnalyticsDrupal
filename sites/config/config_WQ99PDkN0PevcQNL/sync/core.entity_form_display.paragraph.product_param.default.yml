@@ -1,0 +1,35 @@
+uuid: 5fdf2b74-896e-4501-b938-4913615b04ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_param.field_product_param_param
+    - field.field.paragraph.product_param.field_product_param_value
+    - paragraphs.paragraphs_type.product_param
+_core:
+  default_config_hash: KCH61_41qCWOh1iKYz6fOvqqhcV--BwdoApRzGzvyjc
+id: paragraph.product_param.default
+targetEntityType: paragraph
+bundle: product_param
+mode: default
+content:
+  field_product_param_param:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_product_param_value:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

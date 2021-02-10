@@ -1,0 +1,46 @@
+uuid: 14a0e2f0-4db0-4150-81e2-a44283986bd8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_gallery_image_text
+    - field.field.paragraph.gallery.field_title
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - paragraphs
+_core:
+  default_config_hash: xN6RNg1JA1pmEsdI8QGfNzFkeQbbc5I7ZjTlJcKxQzg
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_gallery_image_text:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

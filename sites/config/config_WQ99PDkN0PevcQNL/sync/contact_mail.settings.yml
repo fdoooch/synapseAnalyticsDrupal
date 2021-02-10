@@ -1,0 +1,7 @@
+tpl: 1
+html: 1
+emails: ''
+langcode: ru
+header: "<h2>Mail from website</h2>\n<ul>\n  <li>Do not reply to this email.</li>\n  <li>Find the e-mail or phone number of the customer in the email and reply to him.</li>\n</ul>\n<hr>\n<h2>Customer mail</h2>\n"
+_core:
+  default_config_hash: t9Sy2r0HbzF--v4fHksAEsX9Vw2uA5oJGKAiLRP15HA

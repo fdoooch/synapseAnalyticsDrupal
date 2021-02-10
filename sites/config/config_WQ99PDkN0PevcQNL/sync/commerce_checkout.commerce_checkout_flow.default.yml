@@ -1,0 +1,42 @@
+uuid: 56544642-d1b1-4a91-a9f3-fa89d33a1936
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
+id: default
+label: 'По умолчанию'
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  panes:
+    order_summary:
+      view: commerce_checkout_order_summary
+      step: order_information
+      weight: 0
+      allow_guest_checkout: true
+      allow_registration: false
+    billing_information:
+      step: order_information
+      weight: 1
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 5
+    completion_message:
+      step: complete
+      weight: 3
+    syncart_finalaze:
+      step: complete
+      weight: 4
+    completion_register:
+      step: _disabled
+      weight: 4
+    login:
+      allow_guest_checkout: true
+      allow_registration: false
+      step: _disabled
+      weight: 5
+    review:
+      step: _disabled
+      weight: 6

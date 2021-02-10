@@ -1,0 +1,29 @@
+uuid: 03b928e7-28e3-491e-925d-07f49f028f92
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach
+    - node.type.blog
+  module:
+    - file
+_core:
+  default_config_hash: tU62pL312eGb1Th-weF8sjAMbv9AsJiIifvzLU4_XV8
+id: node.blog.field_attach
+field_name: field_attach
+entity_type: node
+bundle: blog
+label: 'Прикреплённые файлы'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'blog/[date:custom:Y]'
+  file_extensions: 'txt jpg jpeg png doc docx pdf ods xlsx xls zip rar'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

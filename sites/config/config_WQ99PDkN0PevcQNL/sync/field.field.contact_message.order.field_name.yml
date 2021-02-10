@@ -1,0 +1,21 @@
+uuid: 114c9db8-2528-449e-bd89-83ab034b2915
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.storage.contact_message.field_name
+_core:
+  default_config_hash: NrgSb1A73gnA3R77XB-pGKpnc_Yh7MJg_ayW0_SHFHg
+id: contact_message.order.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: order
+label: 'Как к вам обратиться?'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: d26848c4-75c8-4c99-85c0-b088b23adef5
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xqu-7szUExCBH34DFgCF0eDLXz78z9oq7qcO8kaRnSQ
+name: servcie_bgimage
+label: 'Servcie bgimage (1916x800)'
+effects:
+  dba9859a-e0bf-4818-9785-c7c4147f2a82:
+    uuid: dba9859a-e0bf-4818-9785-c7c4147f2a82
+    id: image_convert
+    weight: -10
+    data:
+      extension: jpg
+  f8f98611-afe4-4994-b729-37b1ee23baed:
+    uuid: f8f98611-afe4-4994-b729-37b1ee23baed
+    id: image_scale
+    weight: 3
+    data:
+      width: 1916
+      height: 800
+      upscale: false

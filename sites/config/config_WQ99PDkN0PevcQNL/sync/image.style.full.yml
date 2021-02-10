@@ -1,0 +1,20 @@
+uuid: 52497cc5-cc89-46e6-8d8f-8f0df61cf163
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: hhsC1KrOW7bMDBQS6hfxbDx3e2a04ZIozbPMrmvbIsA
+name: full
+label: full
+effects:
+  cb842cc8-682f-42a6-bd05-5a1ac726f0d2:
+    uuid: cb842cc8-682f-42a6-bd05-5a1ac726f0d2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1000
+      height: 750
+      upscale: false

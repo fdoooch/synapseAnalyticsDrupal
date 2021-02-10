@@ -1,0 +1,21 @@
+uuid: 5b063415-771a-4ac4-aa76-8d6867399d66
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.order
+    - field.storage.contact_message.field_contact
+_core:
+  default_config_hash: 2HyVM3rQfakpoTW91iw1FOXEMvas6A7qH93SXi_NAO8
+id: contact_message.order.field_contact
+field_name: field_contact
+entity_type: contact_message
+bundle: order
+label: 'Телефон / e-mail для связи'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

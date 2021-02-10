@@ -1,0 +1,21 @@
+uuid: 91d1ce05-2974-4cb3-897b-a464bb8d8b86
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.storage.contact_message.field_name
+_core:
+  default_config_hash: MjeAtud6Xw5ZjDiY4AODpZWI7ZE41i5sor8NdZ4lx7c
+id: contact_message.contact.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: contact
+label: 'Ваше имя'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

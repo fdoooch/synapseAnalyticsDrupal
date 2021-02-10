@@ -1,0 +1,20 @@
+uuid: 3288007e-0efb-48b4-a06b-8af46c26ac31
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - adaptive
+_core:
+  default_config_hash: sHhyLkp-bOPXx7X9TBHAlGQMslZQQZX3l78mMjuWMuw
+id: adaptive_title
+theme: adaptive
+region: title
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Заголовок страницы'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: 495f3713-cf92-4e00-a1eb-650b28124c07
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ZpzHhl-cdHzR2O3xYQLmW2OlUhqtpyYPCwXh4HGU8I8
+id: image_text_sort
+label: 'Изображение + текст (с порядком)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

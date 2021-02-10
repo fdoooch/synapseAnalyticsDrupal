@@ -1,0 +1,103 @@
+uuid: 6d3285c7-299e-4721-9c0a-bd57b88f1acb
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.syspage.body
+    - field.field.node.syspage.field_image
+    - field.field.node.syspage.field_metatag
+    - field.field.node.syspage.field_paragraph
+    - field.field.node.syspage.field_short
+    - image.style.thumbnail
+    - node.type.syspage
+  module:
+    - image
+    - metatag
+    - paragraphs
+    - path
+    - text
+_core:
+  default_config_hash: 8FuRYW7H0SD5qycT0yjZkq10GqUmAWkksTXlMKTt5FY
+id: node.syspage.default
+targetEntityType: node
+bundle: syspage
+mode: default
+content:
+  body:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_metatag:
+    weight: 5
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_paragraph:
+    weight: 4
+    settings:
+      title: Параграф
+      title_plural: Параграфы
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_short:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  path:
+    type: path
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

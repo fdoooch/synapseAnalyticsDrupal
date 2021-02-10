@@ -1,0 +1,64 @@
+uuid: 35a5c1ce-afc0-4e01-9ff2-2d7b9a374f67
+langcode: ru
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.field.contact_message.contact.field_details
+    - field.field.contact_message.contact.field_email
+    - field.field.contact_message.contact.field_name
+_core:
+  default_config_hash: ANV_e4Dcpa25ip2gKTNhQWgpVEKrwKlq2yld56dlSzE
+id: contact_message.contact.default
+targetEntityType: contact_message
+bundle: contact
+mode: default
+content:
+  field_details:
+    type: basic_string
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_name:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  mail:
+    weight: -2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  name:
+    weight: -3
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  subject:
+    weight: -1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  langcode: true
+  message: true

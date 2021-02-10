@@ -1,0 +1,34 @@
+uuid: ed95701b-e8d4-4099-9778-df137e94f603
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - cmlstarter_demo
+_core:
+  default_config_hash: bjaU2gq8xDtUmXppGcn2g_KFy24Ua8gzX8bsssWW2J0
+id: store_menu
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: store
+label: Store-Menu
+source:
+  plugin: s_menu
+process:
+  bundle: bundle
+  menu_name: menu
+  title: title
+  link/uri: uri
+  external: external
+  weight: weight
+  expanded: expanded
+  enabled: enabled
+  parent: parent
+  changed: changed
+destination:
+  plugin: 'entity:menu_link_content'
+migration_dependencies:
+  required:
+    - store_page

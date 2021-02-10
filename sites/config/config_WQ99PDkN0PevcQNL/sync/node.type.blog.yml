@@ -1,0 +1,19 @@
+uuid: 48759441-b48a-49d1-82f3-52872d5f7cb1
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: VVg6Iwp2qn1eVy4w2HbEdgzYTZcZPD3lrM4S2l4C3yY
+name: Блог
+type: blog
+description: 'Article blog'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

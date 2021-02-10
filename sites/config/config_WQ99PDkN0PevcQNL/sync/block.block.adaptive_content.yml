@@ -1,0 +1,22 @@
+uuid: be5fddbf-aad2-47dd-a7eb-bfc5a9146843
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - adaptive
+_core:
+  default_config_hash: YdAmeqQLLaLJP39pfj8uxCJii_Q1d2tg1AXpVYkiUNE
+id: adaptive_content
+theme: adaptive
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

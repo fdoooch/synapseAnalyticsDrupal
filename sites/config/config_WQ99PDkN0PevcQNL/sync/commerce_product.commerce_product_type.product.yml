@@ -1,0 +1,14 @@
+uuid: dc030886-5348-4797-aa77-d4abf68b480e
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yJNDxyzKAb3c0pHC9nXuYqxOAKllzZA8mhBQPEBBHfA
+id: product
+label: Товар
+description: ''
+variationType: variation
+multipleVariations: false
+injectVariationFields: false
+traits: {  }
+locked: false

@@ -1,0 +1,18 @@
+langcode: ru
+status: true
+dependencies: {  }
+id: cash
+label: cash
+weight: -1
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: 'Оплата курьеру'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

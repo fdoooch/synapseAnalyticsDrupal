@@ -1,0 +1,12 @@
+uuid: 2432d921-9950-4043-be5f-8cb6fdc5d64a
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Содержимое
+tags:
+  title: '[node:title] | [site:name]'
+  description: '[node:summary]'
+  canonical_url: '[node:url]'

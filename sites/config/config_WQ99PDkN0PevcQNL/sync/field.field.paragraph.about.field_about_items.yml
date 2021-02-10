@@ -1,0 +1,48 @@
+uuid: 52812078-7e65-4dbf-95e1-66e9c70cd60e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_about_items
+    - paragraphs.paragraphs_type.about
+    - paragraphs.paragraphs_type.about_item
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: tfUxHKUbUAh7E6MWgVDWOFwqqTUxduqEDTQOd97yqmY
+id: paragraph.about.field_about_items
+field_name: field_about_items
+entity_type: paragraph
+bundle: about
+label: Элементы
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      about_item: about_item
+    target_bundles_drag_drop:
+      about:
+        weight: 8
+        enabled: false
+      about_item:
+        enabled: true
+        weight: 7
+      body:
+        weight: 9
+        enabled: false
+      gallery:
+        weight: 10
+        enabled: false
+      image_text:
+        weight: 11
+        enabled: false
+      image_text_sort:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

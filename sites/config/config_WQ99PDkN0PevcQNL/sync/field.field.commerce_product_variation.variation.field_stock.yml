@@ -1,0 +1,25 @@
+uuid: ffb03966-688d-4f87-8814-5492ca2663f7
+langcode: ru
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.variation
+    - field.storage.commerce_product_variation.field_stock
+_core:
+  default_config_hash: 7Kyvoc_Mne4XfbOm1sGT59jMfTLWjGxsDx5Jw_zY79s
+id: commerce_product_variation.variation.field_stock
+field_name: field_stock
+entity_type: commerce_product_variation
+bundle: variation
+label: Stock
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

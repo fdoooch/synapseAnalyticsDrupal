@@ -1,0 +1,32 @@
+uuid: 865000cc-23a7-4150-955c-740de411eca1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.product
+  module:
+    - system
+    - views
+  theme:
+    - adaptive
+_core:
+  default_config_hash: atcI3ODuwUgIAnNxR_14Cyz4oAT3PLSTVd2zGiLgcng
+id: views_block__product_block_front
+theme: adaptive
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:product-block_front'
+settings:
+  id: 'views_block:product-block_front'
+  label: 'Catalog products'
+  provider: views
+  label_display: visible
+  views_label: 'Catalog products'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

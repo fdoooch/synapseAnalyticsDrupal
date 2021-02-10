@@ -1,0 +1,17 @@
+uuid: 3acafb49-4c00-47b8-95c4-747a73558b5c
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: i9bgYBm10t0UOomJWfNRthoqxFlgQBzETspHdsv2D7c
+name: product_full
+label: 'Product Full (1000x750)'
+effects:
+  62474c6a-c247-4d83-aa6e-649dbd033f01:
+    uuid: 62474c6a-c247-4d83-aa6e-649dbd033f01
+    id: image_scale
+    weight: 2
+    data:
+      width: 1000
+      height: 750
+      upscale: false

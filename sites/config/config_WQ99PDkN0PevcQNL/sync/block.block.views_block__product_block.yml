@@ -1,0 +1,33 @@
+uuid: d304ffc1-d02e-460f-879d-fc3c566551ad
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.product
+  module:
+    - system
+    - views
+  theme:
+    - adaptive
+_core:
+  default_config_hash: zJygYTFsMcqBYkygbSOchb_ZjQ05Ya23pARv4Oqr0gE
+id: views_block__product_block
+theme: adaptive
+region: content
+weight: 10
+provider: null
+plugin: 'views_block:product-block'
+settings:
+  id: 'views_block:product-block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/product/*'
+    negate: false
+    context_mapping: {  }

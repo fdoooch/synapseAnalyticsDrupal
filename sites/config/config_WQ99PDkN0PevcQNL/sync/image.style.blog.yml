@@ -1,0 +1,20 @@
+uuid: 7f0664e2-e31c-45de-a78b-1c288c61fd55-blog
+langcode: ru
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: BoVwu4l7LHJGXfqSYAosIEPDemnHiYQ5FwfRGJ7BrVg
+name: blog
+label: 'Blog [720x470]'
+effects:
+  cb842cc8-682f-42a6-bd05-5a1ac726f033:
+    uuid: cb842cc8-682f-42a6-bd05-5a1ac726f033
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 470
+      anchor: center-center

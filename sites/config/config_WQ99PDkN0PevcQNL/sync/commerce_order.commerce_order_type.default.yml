@@ -1,0 +1,16 @@
+uuid: 3f462aa7-be14-4d01-a73f-67ec13e97977
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bROz7kd1J83kDf06qdZztYFSezi6UrfwftyJo53rNt4
+label: 'По умолчанию'
+id: default
+workflow: order_default
+numberPattern: order_default
+refresh_mode: customer
+refresh_frequency: 300
+sendReceipt: true
+receiptBcc: ''
+traits: {  }
+locked: false
