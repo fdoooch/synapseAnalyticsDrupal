@@ -20,7 +20,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Основной
+    display_title: Master
     position: 0
     display_options:
       title: Бренд
@@ -87,7 +87,7 @@ display:
       tags: {  }
   page:
     id: page
-    display_title: Страница
+    display_title: Page
     display_plugin: page
     position: 1
     display_options:

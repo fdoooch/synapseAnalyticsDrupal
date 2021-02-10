@@ -1,12 +1,12 @@
-uuid: eea00a7e-9f80-4a6a-9868-de71d4d1fe3a
+uuid: e569e47d-29e2-49ce-a833-2531398e535a
 langcode: ru
 status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.default
+    - field.field.commerce_order.default.shipments
   module:
     - commerce_order
-    - commerce_price
     - state_machine
     - user
 _core:
@@ -90,7 +90,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  balance: true
   billing_profile: true
   order_number: true
+  shipments: true
   store_id: true
   total_paid: true

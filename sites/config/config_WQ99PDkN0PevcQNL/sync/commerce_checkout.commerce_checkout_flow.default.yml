@@ -1,7 +1,11 @@
-uuid: 56544642-d1b1-4a91-a9f3-fa89d33a1936
+uuid: d51d3532-6abf-4e8b-a9e8-b76c9d03c419
 langcode: ru
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce_payment
+    - commerce_shipping
+    - syncart
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
 id: default
@@ -9,6 +13,7 @@ label: 'По умолчанию'
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
+  display_checkout_progress_breadcrumb_links: false
   panes:
     order_summary:
       view: commerce_checkout_order_summary
@@ -16,27 +21,38 @@ configuration:
       weight: 0
       allow_guest_checkout: true
       allow_registration: false
-    billing_information:
-      step: order_information
-      weight: 1
-    contact_information:
-      double_entry: false
-      step: _disabled
-      weight: 5
     completion_message:
-      step: complete
-      weight: 3
-    syncart_finalaze:
+      message:
+        value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
+        format: plain_text
       step: complete
       weight: 4
     completion_register:
       step: _disabled
-      weight: 4
+      weight: 6
+    syncart_finalaze:
+      step: complete
+      weight: 5
+    contact_information:
+      double_entry: false
+      step: _disabled
+      weight: 7
     login:
       allow_guest_checkout: true
       allow_registration: false
       step: _disabled
-      weight: 5
+      weight: 8
     review:
-      step: _disabled
-      weight: 6
+      step: review
+      weight: 9
+    payment_process:
+      capture: true
+      step: payment
+      weight: 3
+    payment_information:
+      step: order_information
+      weight: 2
+    shipping_information:
+      require_shipping_profile: false
+      step: order_information
+      weight: 1

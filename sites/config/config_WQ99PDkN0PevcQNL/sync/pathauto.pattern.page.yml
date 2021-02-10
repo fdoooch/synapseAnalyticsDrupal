@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: b42recTtncOz25Ddm7b9Xk3JdotMXJN1qCUZFLCRGg0
 id: page
-label: Страница
+label: Page
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:

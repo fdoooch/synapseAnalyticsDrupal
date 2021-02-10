@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_variation_type.variation
     - field.field.commerce_product_variation.variation.field_oldprice
     - field.field.commerce_product_variation.variation.field_stock
+    - field.field.commerce_product_variation.variation.weight
   module:
     - commerce_price
 _core:
@@ -36,3 +37,4 @@ hidden:
   sku: true
   status: true
   uid: true
+  weight: true

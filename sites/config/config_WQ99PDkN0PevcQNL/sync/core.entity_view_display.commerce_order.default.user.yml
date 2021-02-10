@@ -5,10 +5,10 @@ dependencies:
   config:
     - commerce_order.commerce_order_type.default
     - core.entity_view_mode.commerce_order.user
+    - field.field.commerce_order.default.shipments
   module:
     - commerce_order
     - entity_reference_revisions
-    - options
 _core:
   default_config_hash: XRgGhXKcDeqhvgwHROyCDmRx7wfApZmGqxYl_9fE7SU
 id: commerce_order.default.user
@@ -58,10 +58,12 @@ content:
     label: hidden
     region: content
 hidden:
+  balance: true
   changed: true
   ip_address: true
   mail: true
   placed: true
+  shipments: true
   state: true
   store_id: true
   total_paid: true

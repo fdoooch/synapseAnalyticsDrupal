@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: a9V9YsC8LncYlP-7Ie0cRhYd_y0O76Ivgn6i7erJj0U
-name: Страница
+name: Page
 type: page
 description: ''
 help: ''

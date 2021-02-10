@@ -11,7 +11,7 @@ id: paragraph.image_text_sort.field_title
 field_name: field_title
 entity_type: paragraph
 bundle: image_text_sort
-label: Заголовок
+label: Title
 description: ''
 required: false
 translatable: true

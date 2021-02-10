@@ -1,4 +1,4 @@
-uuid: b234bafc-965a-4d08-8932-175f29f7b840
+uuid: 61e5cbe6-4110-4560-a6a3-1f28722028d2
 langcode: ru
 status: true
 dependencies: {  }
@@ -8,5 +8,6 @@ id: variation
 label: 'Product Variations'
 orderItemType: default
 generateTitle: true
-traits: {  }
+traits:
+  - purchasable_entity_shippable
 locked: false

@@ -1,9 +1,10 @@
-uuid: 04646167-6eb1-4894-8d06-c503b3ab88a1
+uuid: 308f9829-4aa7-48e2-9f3b-e4e8e6b9f8a5
 langcode: ru
 status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.default
+    - field.field.commerce_order.default.shipments
   module:
     - commerce_order
     - inline_entity_form
@@ -46,6 +47,7 @@ hidden:
   ip_address: true
   mail: true
   order_number: true
+  shipments: true
   state: true
   store_id: true
   uid: true
