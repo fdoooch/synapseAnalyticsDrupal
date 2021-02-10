@@ -1,0 +1,82 @@
+{% if lp_library %}
+  {{ attach_library('synlanding/' ~ lp_library) }}
+{% endif %}
+
+{% if form_bg %}
+  {% set style_form_bg = ' style="background-image: url(' ~ form_bg ~ ')"' %}
+{% endif %}
+{% set order = page.order|render %}
+
+{% if design == 'new' or design == 'default' %}
+  <div class="service-questions{{ style_form_bg ? ' service-questions--custom' }}"{{ style_form_bg|raw }}>
+    <div class="container">
+      <div class="service-questions-content">
+        <div class="service-questions-title">
+          {{- 'Have a questions?'|t -}}
+        </div>
+        <div class="service-questions-text">
+          {{ company.line_text|raw }}
+        </div>
+        <div class="service-questions-buttons">
+          <button type="button" class="btn btn--main btn--big" data-toggle="modal" data-target="#block-adaptive-form-callme">
+            {{ 'Request callback'|t -}}
+          </button>
+          <a href="#order" data-action="scroll" class="btn btn--bordered btn--big">
+            {{ 'Contact us'|t -}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service-block service-block--contacts" id="contacts">
+    <div class="service-block-title">
+      {{ 'Get in touch'|t }}
+    </div>
+    <div class="service-block-content">
+      <div class="container">
+        <div class="service-contacts">
+          {% if new_lp2 %}
+            {% set phones = company.phone|raw %}
+            {% if phones %}
+              {% set phones_array = phones|split(',') %}
+              <div class="service-contacts-phone">
+                {% for phone in phones_array %}
+                    <a href="tel:{{ phone }}">{{ phone|raw }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endif %}
+          {{ company.contact|raw }}
+        </div>
+        {% if social_networks %}
+          <div class="service-social-networks">
+            {% for social in social_networks %}
+              <a href="{{ social.link }}" target="_blank">{{ social.icon|raw }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% if order %}
+    <div class="service-order{{ style_form_bg ? ' service-order--custom' }}"{{ style_form_bg|raw }} id="order">
+      <div class="container">
+        <div class="service-order-content">
+          <div class="service-order-title">
+            {{ 'Сontact us'|t }}
+          </div>
+          {% if new_lp2 %}
+            <div class="service-order-text">
+              {{ 'Our managers will contact you to discuss the details'|t }}
+            </div>
+          {% endif %}
+          <div class="service-order-form">
+            {{ order }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+{% endif %}

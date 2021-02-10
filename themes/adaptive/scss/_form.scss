@@ -1,0 +1,102 @@
+.messages {
+  border: 0;
+  color: $white;
+  box-shadow: none;
+  margin: 0 0 15px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 15px 20px;
+  text-align: left;
+  &--error {
+    background: $red;
+  }
+  &--status {
+    background: #4CAF50;
+  }
+  &--warning {
+    background: #FF9800;
+  }
+  a {
+    color: $white;
+    border-bottom: solid 1px rgba($white, .25);
+    transition: color $duration, border-color $duration;
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+    &:active {
+      border-color: rgba($white, .5);
+    }
+  }
+}
+.contact-message-form {
+  .form {
+    &-control {
+      margin: 0;
+      height: auto;
+      font-size: 17px;
+      line-height: 1.25;
+      font-family: inherit;
+      border-radius: 4px;
+      padding: 17px 20px;
+      background-color: transparent;
+      border: solid lighten($color-text-main, 40%);
+      border-width: 1px !important;
+      transition: color $duration, background-color $duration, border-color $duration;
+      @include m-down(sm) {
+        font-size: 20px;
+      }
+      &::-webkit-input-placeholder {
+        @include inputPlaceholder;
+      }
+      &:focus::-webkit-input-placeholder {
+        @include inputPlaceholderFocus;
+      }
+      &::-moz-placeholder {
+        @include inputPlaceholder;
+      }
+      &:focus::-moz-placeholder {
+        @include inputPlaceholderFocus;
+      }
+      &:-moz-placeholder {
+        @include inputPlaceholder;
+      }
+      &:focus:-moz-placeholder {
+        @include inputPlaceholderFocus;
+      }
+      &:hover {
+        background-color: rgba($color-text-main, 0.15);
+      }
+      &.error {
+        color: $red;
+        border-color: $red;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: $white;
+        border-color: $color-text-main;
+      }
+      &:disabled {
+        cursor: not-allowed;
+        background-color: rgba(#dedddd, .5);
+      }
+    }
+    &-item {
+      margin: 0 0 20px;
+    }
+    &-actions {
+      margin: 0;
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .ajax-progress {
+    display: none;
+  }
+}
+.form-item-date .form-control {
+  width: auto;
+  display: inline;
+}

@@ -1,0 +1,60 @@
+# Managed with Composer.
+core
+libraries
+modules/contrib
+modules/examples
+modules/eexamples
+modules/features
+modules/synapse
+profiles/synmini
+themes/contrib
+vendor
+.csslintrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.htaccess
+.ht.router.php
+autoload.php
+composer.lock
+index.php
+update.php
+
+# Theme
+themes/adaptive/css
+themes/adaptive/images
+themes/adaptive/js/libs
+themes/adaptive/translations
+themes/adaptive/gulpfile.js
+themes/adaptive/package.json
+themes/adaptive/fav.png
+themes/adaptive/logo.png
+themes/adaptive/screenshot.png
+themes/adaptive/README.md
+
+# Ignore settings, content && sensitive information.
+.pass
+cmd-*.php
+sites/default/settings*.php
+sites/default/devmode.php
+sites/example.sites.php
+sites/example.settings.local.php
+sites/development.services.yml
+sites/default/default.settings.php
+sites/default/default.services.yml
+sites/*/files
+sites/*/private
+
+# Patch
+views.patch
+
+# Trash.
+.well-known
+LICENSE.txt
+README.txt
+web.config
+**/node_modules
+sites/simpletest
+adminer.php
+nohup.err
+nohup.out
