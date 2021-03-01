@@ -52,7 +52,13 @@
         "drupal/youtube": "^1.2",
         "yoomoney/yookassa-sdk-php": "^2.0",
         "voronkovich/sberbank-acquiring-client": "^2.5",
-        "drupal/commerce_shipping": "^2.0@RC"
+        "drupal/commerce_shipping": "^2.0@RC",
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "parsecsv/php-parsecsv": "^1.2",
+        "google/cloud-bigquery": "^1.21",
+        "vlucas/phpdotenv": "^5.3",
+        "drupal/phpstorm_metadata": "^1.0@alpha",
+        "drupal/social_api": "^3.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -69,12 +75,15 @@
                 "[web-root]/.gitignore": false,
                 "[web-root]/robots.txt": false,
                 "[web-root]/web.config": false
-            }      
+            }
         },
         "patches": {
           "drupal/commerce": {
             "Condition based on order subtotal — Issue #2938729": "https://www.drupal.org/files/issues/2020-06-05/2938729.patch",
             "Promotion condition for order total — Issue #2993928": "https://www.drupal.org/files/issues/2019-02-11/shipping_calculated_on_subtotal-2993928-3.patch"
+          },
+          "drupal/devel": {
+            "ClassMethods — Issue #221": "https://raw.githubusercontent.com/politsin/snipets/master/patch/kint.patch"
           }
         },
         "_readme": [

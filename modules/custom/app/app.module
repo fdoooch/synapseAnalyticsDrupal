@@ -11,6 +11,14 @@ use Drupal\app\Hook\NodeView;
 use Drupal\app\Hook\Theme;
 use Drupal\app\Hook\ProductView;
 use Drupal\app\Hook\ProductPreprocess;
+use Drupal\app\Hook\Cron;
+
+/**
+ * Implements hook_cron().
+ */
+function app_cron() {
+  Cron::hook();
+}
 
 /**
  * Implements hook_ENTITY_TYPE_view().

@@ -1,0 +1,831 @@
+{"fields": [
+    {
+      "description": "\u0414\u0430\u0442\u0430 \u0432\u0438\u0437\u0438\u0442\u0430",
+      "mode": "REQUIRED",
+      "name": "date",
+      "type": "DATE"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u0432\u0438\u0437\u0438\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "visitID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u043e\u043c\u0435\u0440 \u0441\u0447\u0435\u0442\u0447\u0438\u043a\u0430",
+      "mode": "NULLABLE",
+      "name": "counterID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0431\u044b\u043b\u0438 \u0432 \u0434\u0430\u043d\u043d\u043e\u043c \u0432\u0438\u0437\u0438\u0442\u0435. \u041e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u0435 \u043c\u0430\u0441\u0441\u0438\u0432\u0430 \u2014 500 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u043e\u0432",
+      "mode": "NULLABLE",
+      "name": "watchIDs",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f \u0432\u0438\u0437\u0438\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "dateTime",
+      "type": "STRING"
+    },
+    {
+      "description": "Unix timestamp \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0445\u0438\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "dateTimeUTC",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0435\u0440\u0432\u044b\u0439 \u0432\u0438\u0437\u0438\u0442 \u043f\u043e\u0441\u0435\u0442\u0438\u0442\u0435\u043b\u044f",
+      "mode": "NULLABLE",
+      "name": "isNewUser",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0432\u0445\u043e\u0434\u0430",
+      "mode": "NULLABLE",
+      "name": "startURL",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0432\u044b\u0445\u043e\u0434\u0430",
+      "mode": "NULLABLE",
+      "name": "endURL",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0413\u043b\u0443\u0431\u0438\u043d\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430 (\u0434\u0435\u0442\u0430\u043b\u044c\u043d\u043e)",
+      "mode": "NULLABLE",
+      "name": "pageViews",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u0440\u0435\u043c\u044f \u043d\u0430 \u0441\u0430\u0439\u0442\u0435 (\u0434\u0435\u0442\u0430\u043b\u044c\u043d\u043e)",
+      "mode": "NULLABLE",
+      "name": "visitDuration",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041e\u0442\u043a\u0430\u0437\u043d\u043e\u0441\u0442\u044c",
+      "mode": "NULLABLE",
+      "name": "bounce",
+      "type": "STRING"
+    },
+    {
+      "description": "IP \u0430\u0434\u0440\u0435\u0441",
+      "mode": "NULLABLE",
+      "name": "ipAddress",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u0442\u0440\u0430\u043d\u0430 (ISO)",
+      "mode": "NULLABLE",
+      "name": "regionCountry",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0413\u043e\u0440\u043e\u0434 (\u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u0435 \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435)",
+      "mode": "NULLABLE",
+      "name": "regionCity",
+      "type": "STRING"
+    },
+    {
+      "description": "ID \u0441\u0442\u0440\u0430\u043d\u044b",
+      "mode": "NULLABLE",
+      "name": "regionCountryID",
+      "type": "STRING"
+    },
+    {
+      "description": "ID \u0433\u043e\u0440\u043e\u0434\u0430",
+      "mode": "NULLABLE",
+      "name": "regionCityID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f \u043d\u0430 \u0441\u0430\u0439\u0442\u0435",
+      "mode": "NULLABLE",
+      "name": "clientID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0422\u0438\u043f \u0441\u043e\u0435\u0434\u0438\u043d\u0435\u043d\u0438\u044f",
+      "mode": "NULLABLE",
+      "name": "networkType",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u0446\u0435\u043b\u0435\u0439, \u0434\u043e\u0441\u0442\u0438\u0433\u043d\u0443\u0442\u044b\u0445 \u0437\u0430 \u0434\u0430\u043d\u043d\u044b\u0439 \u0432\u0438\u0437\u0438\u0442",
+      "mode": "NULLABLE",
+      "name": "goalsID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u0440\u0435\u043c\u044f \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u044f \u043a\u0430\u0436\u0434\u043e\u0439 \u0446\u0435\u043b\u0438",
+      "mode": "NULLABLE",
+      "name": "goalsDateTime",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0426\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0446\u0435\u043b\u0438",
+      "mode": "NULLABLE",
+      "name": "goalsPrice",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u0437\u0430\u043a\u0430\u0437\u043e\u0432",
+      "mode": "NULLABLE",
+      "name": "goalsOrder",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u0432\u0430\u043b\u044e\u0442\u044b",
+      "mode": "NULLABLE",
+      "name": "goalsCurrency",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u0442\u0440\u0430\u0444\u0438\u043a\u0430",
+      "mode": "NULLABLE",
+      "name": "lastTrafficSource",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0420\u0435\u043a\u043b\u0430\u043c\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+      "mode": "NULLABLE",
+      "name": "lastAdvEngine",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0435\u0440\u0435\u0445\u043e\u0434 \u0441 \u0441\u0430\u0439\u0442\u043e\u0432",
+      "mode": "NULLABLE",
+      "name": "lastReferalSource",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430",
+      "mode": "NULLABLE",
+      "name": "lastSearchEngineRoot",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u043e\u0438\u0441\u043a\u043e\u0432\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430 (\u0434\u0435\u0442\u0430\u043b\u044c\u043d\u043e)",
+      "mode": "NULLABLE",
+      "name": "lastSearchEngine",
+      "type": "STRING"
+    },
+    {
+      "description": "C\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u0430\u044f \u0441\u0435\u0442\u044c",
+      "mode": "NULLABLE",
+      "name": "lastSocialNetwork",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0413\u0440\u0443\u043f\u043f\u0430 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0441\u0435\u0442\u0438",
+      "mode": "NULLABLE",
+      "name": "lastSocialNetworkProfile",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0420\u0435\u0444\u0435\u0440\u0435\u0440",
+      "mode": "NULLABLE",
+      "name": "referer",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u043c\u043f\u0430\u043d\u0438\u044f \u042f\u043d\u0434\u0435\u043a\u0441.\u0414\u0438\u0440\u0435\u043a\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastDirectClickOrder",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0439",
+      "mode": "NULLABLE",
+      "name": "lastDirectBannerGroup",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0435 \u042f\u043d\u0434\u0435\u043a\u0441.\u0414\u0438\u0440\u0435\u043a\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastDirectClickBanner",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043a\u0430\u043c\u043f\u0430\u043d\u0438\u0438 \u042f\u043d\u0434\u0435\u043a\u0441.\u0414\u0438\u0440\u0435\u043a\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastDirectClickOrderName",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0433\u0440\u0443\u043f\u043f\u044b \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0439",
+      "mode": "NULLABLE",
+      "name": "lastClickBannerGroupName",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u042f\u043d\u0434\u0435\u043a\u0441.\u0414\u0438\u0440\u0435\u043a\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastDirectClickBannerName",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0423\u0441\u043b\u043e\u0432\u0438\u0435 \u043f\u043e\u043a\u0430\u0437\u0430 \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f",
+      "mode": "NULLABLE",
+      "name": "lastDirectPhraseOrCond",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0422\u0438\u043f \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0438",
+      "mode": "NULLABLE",
+      "name": "lastDirectPlatformType",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u043b\u043e\u0449\u0430\u0434\u043a\u0430",
+      "mode": "NULLABLE",
+      "name": "lastDirectPlatform",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0422\u0438\u043f \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u043f\u043e\u043a\u0430\u0437\u0430 \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f",
+      "mode": "NULLABLE",
+      "name": "lastDirectConditionType",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u0430\u043b\u044e\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastCurrencyID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041c\u0435\u0442\u043a\u0430 from",
+      "mode": "NULLABLE",
+      "name": "ym_from",
+      "type": "STRING"
+    },
+    {
+      "description": "UTM Campaign",
+      "mode": "NULLABLE",
+      "name": "UTMCampaign",
+      "type": "STRING"
+    },
+    {
+      "description": "UTM Content",
+      "mode": "NULLABLE",
+      "name": "UTMContent",
+      "type": "STRING"
+    },
+    {
+      "description": "UTM Medium",
+      "mode": "NULLABLE",
+      "name": "UTMMedium",
+      "type": "STRING"
+    },
+    {
+      "description": "UTM Source",
+      "mode": "NULLABLE",
+      "name": "UTMSource",
+      "type": "STRING"
+    },
+    {
+      "description": "UTM Term",
+      "mode": "NULLABLE",
+      "name": "UTMTerm",
+      "type": "STRING"
+    },
+    {
+      "description": "Openstat Ad",
+      "mode": "NULLABLE",
+      "name": "openstatAd",
+      "type": "STRING"
+    },
+    {
+      "description": "Openstat Campaign",
+      "mode": "NULLABLE",
+      "name": "openstatCampaign",
+      "type": "STRING"
+    },
+    {
+      "description": "Openstat Service",
+      "mode": "NULLABLE",
+      "name": "openstatService",
+      "type": "STRING"
+    },
+    {
+      "description": "Openstat Source",
+      "mode": "NULLABLE",
+      "name": "openstatSource",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u043c\u0435\u0442\u043a\u0438 GCLID",
+      "mode": "NULLABLE",
+      "name": "hasGCLID",
+      "type": "STRING"
+    },
+    {
+      "description": "GCLID \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0433\u043e \u0432\u0438\u0437\u0438\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastGCLID",
+      "type": "STRING"
+    },
+    {
+      "description": "GCLID \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0432\u0438\u0437\u0438\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "firstGCLID",
+      "type": "STRING"
+    },
+    {
+      "description": "GCLID \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0433\u043e \u0437\u043d\u0430\u0447\u0438\u043c\u043e\u0433\u043e \u0432\u0438\u0437\u0438\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "lastSignificantGCLID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u042f\u0437\u044b\u043a \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserLanguage",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u0442\u0440\u0430\u043d\u0430 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserCountry",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0427\u0430\u0441\u043e\u0432\u043e\u0439 \u043f\u043e\u044f\u0441 \u043d\u0430 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u0435 \u043f\u043e\u0441\u0435\u0442\u0438\u0442\u0435\u043b\u044f",
+      "mode": "NULLABLE",
+      "name": "clientTimeZone",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0422\u0438\u043f \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430. \u0412\u043e\u0437\u043c\u043e\u0436\u043d\u044b\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f: 1 \u2014 \u0434\u0435\u0441\u043a\u0442\u043e\u043f, 2 \u2014 \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u044b, 3 \u2014 \u043f\u043b\u0430\u043d\u0448\u0435\u0442\u044b, 4 \u2014 TV",
+      "mode": "NULLABLE",
+      "name": "deviceCategory",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430",
+      "mode": "NULLABLE",
+      "name": "mobilePhone",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041c\u043e\u0434\u0435\u043b\u044c \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430",
+      "mode": "NULLABLE",
+      "name": "mobilePhoneModel",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c",
+      "mode": "NULLABLE",
+      "name": "operatingSystemRoot",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041e\u043f\u0435\u0440\u0430\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430 (\u0434\u0435\u0442\u0430\u043b\u044c\u043d\u043e)",
+      "mode": "NULLABLE",
+      "name": "operatingSystem",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0411\u0440\u0430\u0443\u0437\u0435\u0440",
+      "mode": "NULLABLE",
+      "name": "browser",
+      "type": "STRING"
+    },
+    {
+      "description": "Major-\u0432\u0435\u0440\u0441\u0438\u044f \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserMajorVersion",
+      "type": "STRING"
+    },
+    {
+      "description": "Minor-\u0432\u0435\u0440\u0441\u0438\u044f \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserMinorVersion",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0414\u0432\u0438\u0436\u043e\u043a \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserEngine",
+      "type": "STRING"
+    },
+    {
+      "description": "Major-\u0432\u0435\u0440\u0441\u0438\u044f \u0434\u0432\u0438\u0436\u043a\u0430 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserEngineVersion1",
+      "type": "STRING"
+    },
+    {
+      "description": "Minor-\u0432\u0435\u0440\u0441\u0438\u044f \u0434\u0432\u0438\u0436\u043a\u0430 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserEngineVersion2",
+      "type": "STRING"
+    },
+    {
+      "description": "Build-\u0432\u0435\u0440\u0441\u0438\u044f \u0434\u0432\u0438\u0436\u043a\u0430 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserEngineVersion3",
+      "type": "STRING"
+    },
+    {
+      "description": "Revision-\u0432\u0435\u0440\u0441\u0438\u044f \u0434\u0432\u0438\u0436\u043a\u0430 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "browserEngineVersion4",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u043b\u0438\u0447\u0438\u0435 Cookie",
+      "mode": "NULLABLE",
+      "name": "cookieEnabled",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u043b\u0438\u0447\u0438\u0435 JavaScript",
+      "mode": "NULLABLE",
+      "name": "javascriptEnabled",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u043e\u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u0435 \u0441\u0442\u043e\u0440\u043e\u043d",
+      "mode": "NULLABLE",
+      "name": "screenFormat",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0413\u043b\u0443\u0431\u0438\u043d\u0430 \u0446\u0432\u0435\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "screenColors",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u044d\u043a\u0440\u0430\u043d\u0430",
+      "mode": "NULLABLE",
+      "name": "screenOrientation",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0448\u0438\u0440\u0438\u043d\u0430",
+      "mode": "NULLABLE",
+      "name": "screenWidth",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0432\u044b\u0441\u043e\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "screenHeight",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0448\u0438\u0440\u0438\u043d\u0430",
+      "mode": "NULLABLE",
+      "name": "physicalScreenWidth",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0424\u0438\u0437\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0432\u044b\u0441\u043e\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "physicalScreenHeight",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0428\u0438\u0440\u0438\u043d\u0430 \u043e\u043a\u043d\u0430",
+      "mode": "NULLABLE",
+      "name": "windowClientWidth",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u044b\u0441\u043e\u0442\u0430 \u043e\u043a\u043d\u0430",
+      "mode": "NULLABLE",
+      "name": "windowClientHeight",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u043f\u043e\u043a\u0443\u043f\u043a\u0438",
+      "mode": "NULLABLE",
+      "name": "purchaseID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f \u043f\u043e\u043a\u0443\u043f\u043a\u0438",
+      "mode": "NULLABLE",
+      "name": "purchaseDateTime",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041c\u0430\u0433\u0430\u0437\u0438\u043d \u0438\u043b\u0438 \u0444\u0438\u043b\u0438\u0430\u043b, \u0432 \u043a\u043e\u0442\u043e\u0440\u043e\u043c \u043f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0438\u044f",
+      "mode": "NULLABLE",
+      "name": "purchaseAffiliation",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u043d\u044b\u0439 \u0434\u043e\u0445\u043e\u0434",
+      "mode": "NULLABLE",
+      "name": "purchaseRevenue",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u0443\u043c\u043c\u0430 \u0432\u0441\u0435\u0445 \u043d\u0430\u043b\u043e\u0433\u043e\u0432, \u0441\u0432\u044f\u0437\u0430\u043d\u043d\u044b\u0445 \u0441 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0438\u0435\u0439",
+      "mode": "NULLABLE",
+      "name": "purchaseTax",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438, \u0441\u0432\u044f\u0437\u0430\u043d\u043d\u0430\u044f \u0441 \u0442\u0440\u0430\u043d\u0437\u0430\u043a\u0446\u0438\u0435\u0439",
+      "mode": "NULLABLE",
+      "name": "purchaseShipping",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u043c\u043e\u043a\u043e\u0434, \u0430\u0441\u0441\u043e\u0446\u0438\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u043e \u0432\u0441\u0435\u0439 \u043f\u043e\u043a\u0443\u043f\u043a\u043e\u0439 \u0446\u0435\u043b\u0438\u043a\u043e\u043c",
+      "mode": "NULLABLE",
+      "name": "purchaseCoupon",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u0430\u043b\u044e\u0442\u0430",
+      "mode": "NULLABLE",
+      "name": "purchaseCurrency",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0432 \u043f\u043e\u043a\u0443\u043f\u043a\u0435",
+      "mode": "NULLABLE",
+      "name": "purchaseProductQuantity",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u043f\u043e\u043a\u0443\u043f\u043a\u0438",
+      "mode": "NULLABLE",
+      "name": "productsPurchaseID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsName",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsBrand",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u0442\u043e\u0432\u0430\u0440",
+      "mode": "NULLABLE",
+      "name": "productsCategory",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 1",
+      "mode": "NULLABLE",
+      "name": "productsCategory1",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 2",
+      "mode": "NULLABLE",
+      "name": "productsCategory2",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 3",
+      "mode": "NULLABLE",
+      "name": "productsCategory3",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 4",
+      "mode": "NULLABLE",
+      "name": "productsCategory4",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 5",
+      "mode": "NULLABLE",
+      "name": "productsCategory5",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0420\u0430\u0437\u043d\u043e\u0432\u0438\u0434\u043d\u043e\u0441\u0442\u044c \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsVariant",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0442\u043e\u0432\u0430\u0440\u0430 \u0432 \u0441\u043f\u0438\u0441\u043a\u0435",
+      "mode": "NULLABLE",
+      "name": "productsPosition",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0426\u0435\u043d\u0430 \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsPrice",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u0430\u043b\u044e\u0442\u0430 \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsCurrency",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u043c\u043e\u043a\u043e\u0434 \u0430\u0441\u0441\u043e\u0446\u0438\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441 \u0442\u043e\u0432\u0430\u0440\u043e\u043c",
+      "mode": "NULLABLE",
+      "name": "productsCoupon",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "productsQuantity",
+      "type": "STRING"
+    },
+    {
+      "description": "URL \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u0442\u043e\u0432\u0430\u0440\u043e\u043c",
+      "mode": "NULLABLE",
+      "name": "impressionsURL",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0414\u0430\u0442\u0430 \u0438 \u0432\u0440\u0435\u043c\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsDateTime",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0418\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsProductID",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsProductName",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsProductBrand",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCategory",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 1",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCategory1",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 2",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCategory2",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 3",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCategory3",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 4",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCategory4",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f, \u043a \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0441\u044f \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440, \u0443\u0440\u043e\u0432\u0435\u043d\u044c 5",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCategory5",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0420\u0430\u0437\u043d\u043e\u0432\u0438\u0434\u043d\u043e\u0441\u0442\u044c \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsProductVariant",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0426\u0435\u043d\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u043e\u0433\u043e \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsProductPrice",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0412\u0430\u043b\u044e\u0442\u0430 \u0434\u043b\u044f \u0442\u043e\u0432\u0430\u0440\u0430",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCurrency",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u043c\u043e\u043a\u043e\u0434 \u0430\u0441\u0441\u043e\u0446\u0438\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u043d\u044b\u043c \u0442\u043e\u0432\u0430\u0440\u043e\u043c",
+      "mode": "NULLABLE",
+      "name": "impressionsProductCoupon",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0414\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0437\u0432\u043e\u043d\u043a\u0430 \u0432 \u0441\u0435\u043a\u0443\u043d\u0434\u0430\u0445",
+      "mode": "NULLABLE",
+      "name": "offlineCallTalkDuration",
+      "type": "STRING"
+    },
+    {
+      "description": "\u0414\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043e\u0436\u0438\u0434\u0430\u043d\u0438\u044f \u0437\u0432\u043e\u043d\u043a\u0430 \u0432 \u0441\u0435\u043a\u0443\u043d\u0434\u0430\u0445",
+      "mode": "NULLABLE",
+      "name": "offlineCallHoldDuration",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u043f\u0443\u0449\u0435\u043d \u043b\u0438 \u0437\u0432\u043e\u043d\u043e\u043a",
+      "mode": "NULLABLE",
+      "name": "offlineCallMissed",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u043b\u044c\u043d\u0430\u044f \u043c\u0435\u0442\u043a\u0430",
+      "mode": "NULLABLE",
+      "name": "offlineCallTag",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041f\u0435\u0440\u0432\u0438\u0447\u043d\u044b\u0439 \u043b\u0438 \u0437\u0432\u043e\u043d\u043e\u043a",
+      "mode": "NULLABLE",
+      "name": "offlineCallFirstTimeCaller",
+      "type": "STRING"
+    },
+    {
+      "description": "URL, \u0441 \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u0431\u044b\u043b \u0437\u0432\u043e\u043d\u043e\u043a (\u0430\u0441\u0441\u043e\u0446\u0438\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0441 \u0441\u043e\u0431\u044b\u0442\u0438\u0435\u043c \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430)",
+      "mode": "NULLABLE",
+      "name": "offlineCallURL",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 1",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey1",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 2",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey2",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 3",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey3",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 4",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey4",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 5",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey5",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 6",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey6",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 7",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey7",
+      "type": "STRING"
+    },
+    {
+      "description": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0432\u0438\u0437\u0438\u0442\u0430, \u0443\u0440. 8",
+      "mode": "NULLABLE",
+      "name": "parsedParamsKey8",
+      "type": "STRING"
+    }
+  ]
+}

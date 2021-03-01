@@ -1,0 +1,16 @@
+services:
+  app:
+    class: Drupal\app\Service\AppService
+    arguments: []
+  app.yandex_metrika:
+    class: Drupal\app\Service\YandexMetrikaService
+    arguments: []
+  app.google_bigquery:
+    class: Drupal\app\Service\GoogleBigQueryService
+    arguments: []
+  app.yandex_bq:
+    class: Drupal\app\Service\YandexBQService
+    arguments: []
+  app.analytics:
+    class: Drupal\app\Service\HelloWorld
+    arguments: []

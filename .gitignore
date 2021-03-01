@@ -58,3 +58,6 @@ sites/simpletest
 adminer.php
 nohup.err
 nohup.out
+
+#tokens
+.env
